@@ -1,0 +1,28 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <strong class="navbar-item">
+      Task Completer 1.0
+    </strong>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <%= link_to 'Home', home_path, class: 'navbar-item' %>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <%= link_to 'Register', new_user_registration_path, class: 'button is-primary' %>
+          <%= link_to 'Sign in', new_user_session_path, class: 'button is-light' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
